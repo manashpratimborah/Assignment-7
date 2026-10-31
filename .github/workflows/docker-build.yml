@@ -1,4 +1,4 @@
-cat << 'EOF' > .github/workflows/docker-build.yml
+
 name: Docker Build CI
 
 on:
@@ -20,4 +20,3 @@ jobs:
       - name: Build Docker Image
         run: |
           docker build -t docker-ci:v1 .
-EOF
